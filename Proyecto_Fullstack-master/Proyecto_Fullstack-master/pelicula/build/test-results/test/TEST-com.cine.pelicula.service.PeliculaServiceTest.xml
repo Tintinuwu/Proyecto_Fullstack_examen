@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.cine.pelicula.service.PeliculaServiceTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-06-24T09:01:01.271Z" hostname="WATON" time="2.113">
+  <properties/>
+  <testcase name="obtenerActivas_retornaSoloActivas()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="1.926"/>
+  <testcase name="existePelicula_noExisteRetornaFalse()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.009"/>
+  <testcase name="existePelicula_activaRetornaTrue()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.005"/>
+  <testcase name="crear_tituloDuplicado_lanzaExcepcion()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.032"/>
+  <testcase name="eliminar_peliculaNoExiste()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.009"/>
+  <testcase name="obtenerPorId_encontrado()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.008"/>
+  <testcase name="actualizar_peliculaNoExiste()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.009"/>
+  <testcase name="obtenerPorGenero_retornaFiltradas()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.012"/>
+  <testcase name="eliminar_exitoso()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.015"/>
+  <testcase name="obtenerTodas_listaVacia()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.007"/>
+  <testcase name="actualizar_tituloDuplicado_lanzaExcepcion()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.01"/>
+  <testcase name="actualizar_exitoso()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.011"/>
+  <testcase name="crear_exitoso()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.01"/>
+  <testcase name="obtenerTodas_retornaLista()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.006"/>
+  <testcase name="existePelicula_inactivaRetornaFalse()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.004"/>
+  <testcase name="obtenerPorId_noEncontrado()" classname="com.cine.pelicula.service.PeliculaServiceTest" time="0.005"/>
+  <system-out><![CDATA[05:01:03.160 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Consultando películas activas del catálogo
+05:01:03.225 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Intentando crear película: 'Avengers'
+05:01:03.230 [Test worker] WARN com.cine.pelicula.service.PeliculaService -- Creación rechazada - título ya existe: 'Avengers'
+05:01:03.259 [Test worker] WARN com.cine.pelicula.service.PeliculaService -- Eliminación fallida - película no encontrada con ID: 99
+05:01:03.280 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Actualizando película con ID: 99
+05:01:03.296 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Filtrando películas por género: 'ACCION'
+05:01:03.313 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Película ID 1 desactivada (soft delete)
+05:01:03.326 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Consultando catálogo completo de películas
+05:01:03.336 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Actualizando película con ID: 1
+05:01:03.337 [Test worker] WARN com.cine.pelicula.service.PeliculaService -- Actualización rechazada - título ya en uso: 'Spider-Man'
+05:01:03.346 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Actualizando película con ID: 1
+05:01:03.350 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Película ID 1 actualizada correctamente
+05:01:03.359 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Intentando crear película: 'Avengers'
+05:01:03.360 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Película creada con ID: 1
+05:01:03.370 [Test worker] INFO com.cine.pelicula.service.PeliculaService -- Consultando catálogo completo de películas
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\marti\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.8\f09415827a71be7ed621c7bd02550678f28bc81c\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
